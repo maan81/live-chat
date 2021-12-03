@@ -3,7 +3,7 @@ import 'firebase/firestore'
 import 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBKB4L3qyD-QHCovEvntQS3HRuOJBVSkno",
+  apiKey: "AIzaSyDuOi_wi20sicWot63RV8ky423jsg5Bar4",
   authDomain: "udemy-vue-projects.firebaseapp.com",
   databaseURL: "https://udemy-vue-projects.firebaseio.com",
   projectId: "udemy-vue-projects",
