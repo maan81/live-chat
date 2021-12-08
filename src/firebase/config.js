@@ -4,14 +4,12 @@ import 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: "AIzaSyDuOi_wi20sicWot63RV8ky423jsg5Bar4",
-  authDomain: "udemy-vue-projects.firebaseapp.com",
-  databaseURL: "https://udemy-vue-projects.firebaseio.com",
-  projectId: "udemy-vue-projects",
-  storageBucket: "udemy-vue-projects.appspot.com",
-  messagingSenderId: "25092947019",
-  appId: "1:25092947019:web:1cd42f080ff63e1c63e1ce"
+  authDomain: "udemy-vue-firebase-bd0ef.firebaseapp.com",
+  projectId: "udemy-vue-firebase-bd0ef",
+  storageBucket: "udemy-vue-firebase-bd0ef.appspot.com",
+  messagingSenderId: "502315536288",
+  appId: "1:502315536288:web:c5fd277aca60c07fbc9ec5"
 };
-
 // init firebase
 firebase.initializeApp(firebaseConfig)
 
