@@ -16,15 +16,16 @@ import { timestamp } from '../firebase/config';
 
 export default {
   setup(){
-    const user = getUser();
+    const { user } = getUser();
     const message = ref('');
 
     const handleSubmit = async () => {
       // console.log(user.user._rawValue.displayName);
+      // console.log(user.value);
 
       const chat = {
-        // name: user.value.displayName,
-        name: user.user._rawValue.displayName,
+        name: user.value.displayName,
+        // name: user.user._rawValue.displayName,
         message: message.value,
         createdAt: timestamp()
       };
