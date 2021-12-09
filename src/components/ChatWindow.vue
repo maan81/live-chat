@@ -18,6 +18,8 @@ export default {
   setup(){
     const { error, documents } = getCollection('messeges');
 
+    console.log(documents);
+
     return { error, documents };
   }  
 }

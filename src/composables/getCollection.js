@@ -11,9 +11,13 @@ const getCollection = (collection) => {
 
   collectionRef.onSnapshot((snap) => {
     let results = [];
+    console.log(snap.docs);
     snap.docs.forEach((doc) => {
       doc.data().createdAt && results.push({ ...doc.data(), id: doc.id });
     });
+
+    // console.log(results);
+
     documents.value = results;
     error.value = null;
   }, (err) => {
