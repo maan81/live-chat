@@ -26,7 +26,7 @@ export default {
     const handleSubmit = async () => {
       // console.log(user.user._rawValue.displayName);
       // console.log(user.value);
-      console.log('asdf');
+      // console.log('asdf');
 
       const chat = {
         name: user.value.displayName,
