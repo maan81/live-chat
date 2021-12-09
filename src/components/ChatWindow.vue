@@ -2,7 +2,7 @@
   <div class="chat-window">
     <div v-if="error">{{ error }}</div>
     <div v-if="documents" class="messages">
-      <div v-for="doc in documents" :key="doc.id">
+      <div v-for="doc in documents" :key="doc.id" class="single">
         <span class="created-at">{{ doc.createdAt.toDate() }}</span>
         <span class="name">{{ doc.name }}</span>
         <span class="message">{{ doc.message }}</span>
@@ -16,12 +16,12 @@ import getCollection from '../composables/getCollection';
 
 export default {
   setup(){
-    const { error, documents } = getCollection('messeges');
+    const { error, documents } = getCollection('messages');
 
     console.log(documents);
 
     return { error, documents };
-  }  
+  }
 }
 </script>
 
